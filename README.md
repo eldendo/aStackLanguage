@@ -61,6 +61,6 @@ As an example, a command "HI" is added, and three commands which change the colo
 1060 if i$="clr-normal" then poke 53280,14: poke 53281,6: print chr$(154):return
 1100 msg$="unknown command":return 
 ```
-![screenshot](../H2.png)
+![screenshot](./H2.png)
 Again very simple... In the next chapter we will a little simple arithmic.
 
