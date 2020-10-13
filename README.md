@@ -43,7 +43,7 @@ Very simple isn't it? In the next chapter we will build a simple interpreter to 
 ### The interpreter
 
 Our evaluator will be a very simple interpreter. Everything "word" we enter is looked up in the list and something is executed. If the word is not in the list, an 'unknown command' error is returned.  
-As an example, a command "HI" is added, and tree commands which change the color of the screen using poke commands to the video hardware.
+As an example, a command "HI" is added, and three commands which change the color of the screen using poke commands to the video hardware.
 
 ```RealBasic
 100 rem repl
@@ -61,6 +61,6 @@ As an example, a command "HI" is added, and tree commands which change the color
 1060 if i$="clr-normal" then poke 53280,14: poke 53281,6: print chr$(154):return
 1100 msg$="unknown command":return 
 ```
-
+![screenshot](../H2.png)
 Again very simple... In the next chapter we will a little simple arithmic.
 
