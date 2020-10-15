@@ -1,4 +1,4 @@
-# qStackLanguage
+# aStackLanguage
 
 This project is a tutorial how to write a FORTH alike implementation on a c64.
 This project is only just started... so there is no finished product yet. It is an ongoing text where to I will contribute whenever I see fit.
