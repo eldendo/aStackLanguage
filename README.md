@@ -1,13 +1,15 @@
 # aStackLanguage
 
 This project is a tutorial how to write a FORTH alike implementation on a c64.
-This project is only just started... so there is no finished product yet. It is an ongoing text where to I will contribute whenever I see fit.
+This project is only just started... so there is no finished product yet. It is an ongoing text to which I will contribute whenever I see fit.
 
-**WARNING: I never used Forth** so I am making this application while I am learning. So don't use this text as a reference nor as a FORTH manual... This is pure a fun project.
+**WARNING: I never used Forth** so I am making this application while I am learning. So don't use this text as a reference nor as a FORTH manual... This is pure a fun project.  
+
+**UPDATE:** I changed the projectname from **edFORTH64** to **aStackLanguage** since I don't want to be limited by FORTH syntax or implementation. Perhabs I will conform to FORTH later, but now I will be free to experiment.
 
 This project is part of my **bare commodore 64** project.
 
-> The **bare commodore64** project aims to build programs on the c64 without any existing tools: only **BASIC V2** and manually translated machine code are allowed, except for tools that are build by the **bare commodore 64** project itself. So no existing compilers and helping tools, nor any form of cross-development. Since I am not a masochist, I allow the use of a commodore emulator, and the use of a modern editor to write code. (But the only thing you can do is to copy-paste the code from the editor in the emulator, so emulating typing things in. No transfers of files from PC to the c64 or it's drive)
+> The **bare commodore64** project aims to build programs on the c64 without any existing tools: only **BASIC V2** and manually translated machine code are allowed, except for tools that are build by the **bare commodore 64** project itself. So no existing compilers and helping tools, nor any form of cross-development. Since I am not a masochist, I allow the use of a commodore emulator, and the use of a modern editor to write code. But the only thing you can do is to copy-paste the code from the editor in the emulator, so emulating typing things in. (The VICE emulator has a paste function that allows this)
 
 ## Introduction
 
@@ -42,7 +44,7 @@ Very simple isn't it? In the next chapter we will build a simple interpreter to 
 ## Chapter 2
 ### The interpreter
 
-Our evaluator will be a very simple interpreter. Everything "word" we enter is looked up in the list and something is executed. If the word is not in the list, an 'unknown command' error is returned.  
+Our evaluator will be a very simple interpreter. Every "word" we enter is looked up in the list and something is executed. If the word is not in the list, an 'unknown command' error is returned.  
 As an example, a command "HI" is added, and three commands which change the color of the screen using poke commands to the video hardware.
 
 ```RealBasic
@@ -61,6 +63,6 @@ As an example, a command "HI" is added, and three commands which change the colo
 1060 if i$="clr-normal" then poke 53280,14: poke 53281,6: print chr$(154):return
 1100 msg$="unknown command":return 
 ```
-![screenshot](./H2.png)  
-Again very simple... In the next chapter we will add a little simple arithmitic.
+
+Again very simple... In the next chapter we will a little simple arithmetic.
 
