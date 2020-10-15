@@ -1,9 +1,9 @@
-# edFORTH64
+# qStackLanguage
 
 This project is a tutorial how to write a FORTH alike implementation on a c64.
-This project is only just started... so there is no finished product yet. It is an ongoing text whereto I will contribute whenever I see fit.
+This project is only just started... so there is no finished product yet. It is an ongoing text where to I will contribute whenever I see fit.
 
-** WARNING: I never used Forth ** so I am making this application while I am learning. So don't use this text as a reference nor as a FORTH manual... This is pure a fun project.
+**WARNING: I never used Forth** so I am making this application while I am learning. So don't use this text as a reference nor as a FORTH manual... This is pure a fun project.
 
 This project is part of my **bare commodore 64** project.
 
@@ -61,6 +61,6 @@ As an example, a command "HI" is added, and three commands which change the colo
 1060 if i$="clr-normal" then poke 53280,14: poke 53281,6: print chr$(154):return
 1100 msg$="unknown command":return 
 ```
-![screenshot](./H2.png)
-Again very simple... In the next chapter we will a little simple arithmic.
+![screenshot](./H2.png)  
+Again very simple... In the next chapter we will add a little simple arithmitic.
 
